@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+/* Custom Color Palette Variables */
+:root {
+  --primary-color: #5a8f76; /* Main buttons, links, key highlights */
+  --hover-color: #96cdb0; /* Hover effects for buttons or cards */
+  --background-color: #eee8b2; /* Page or section background */
+  --border-color: #203b37; /* Borders for cards, inputs, buttons */
+  --shadow-color: #081b1b; /* Subtle shadows for depth */
+}
+
+/* Custom utility classes for the new palette */
+.bg-primary {
+  background-color: var(--primary-color);
+}
+.bg-hover {
+  background-color: var(--hover-color);
+}
+.bg-custom {
+  background-color: var(--background-color);
+}
+.border-custom {
+  border-color: var(--border-color);
+}
+.text-primary {
+  color: var(--primary-color);
+}
+.text-border {
+  color: var(--border-color);
+}
+.shadow-custom {
+  box-shadow: 0 4px 6px -1px var(--shadow-color),
+    0 2px 4px -1px var(--shadow-color);
+}
+
+* {
+  /* ya scroll */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge purane versions */
+}
+
+::-webkit-scrollbar,
+::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
